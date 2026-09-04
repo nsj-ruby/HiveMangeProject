@@ -1,0 +1,19 @@
+{
+  "name": "customer-voice-mining-demo",
+  "version": "1.0.0",
+  "description": "客户声音掘金-数据组合分析及开放能力 Demo（零依赖：node 内置 http/sqlite/crypto）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init:mysql": "node scripts/init-mysql.js",
+    "test": "node scripts/smoke.js && node scripts/apitest.js",
+    "check": "node scripts/checkjs.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.0"
+  },
+  "license": "MIT"
+}
